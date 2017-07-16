@@ -15,6 +15,7 @@
 		3B64946E1F196D0400E4F93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64946C1F196D0400E4F93E /* LaunchScreen.storyboard */; };
 		3B6494791F196D0400E4F93E /* Star_WarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6494781F196D0400E4F93E /* Star_WarsTests.swift */; };
 		3B6494841F196D0400E4F93E /* Star_WarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6494831F196D0400E4F93E /* Star_WarsUITests.swift */; };
+		3B6494921F196D8000E4F93E /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6494911F196D8000E4F93E /* PeopleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3B64947F1F196D0400E4F93E /* Star WarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star WarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6494831F196D0400E4F93E /* Star_WarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsUITests.swift; sourceTree = "<group>"; };
 		3B6494851F196D0400E4F93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6494911F196D8000E4F93E /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				3B64945F1F196D0400E4F93E /* Star Wars */,
-				3B6494771F196D0400E4F93E /* Star WarsTests */,
 				3B6494821F196D0400E4F93E /* Star WarsUITests */,
 				3B64945E1F196D0400E4F93E /* Products */,
 			);
@@ -106,6 +107,8 @@
 				3B64946C1F196D0400E4F93E /* LaunchScreen.storyboard */,
 				3B64946F1F196D0400E4F93E /* Info.plist */,
 				3B6494671F196D0400E4F93E /* Star_Wars.xcdatamodeld */,
+				3B6494911F196D8000E4F93E /* PeopleViewController.swift */,
+				3B6494771F196D0400E4F93E /* Star WarsTests */,
 			);
 			path = "Star Wars";
 			sourceTree = "<group>";
@@ -117,7 +120,7 @@
 				3B64947A1F196D0400E4F93E /* Info.plist */,
 			);
 			path = "Star WarsTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		3B6494821F196D0400E4F93E /* Star WarsUITests */ = {
 			isa = PBXGroup;
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6494691F196D0400E4F93E /* Star_Wars.xcdatamodeld in Sources */,
+				3B6494921F196D8000E4F93E /* PeopleViewController.swift in Sources */,
 				3B6494631F196D0400E4F93E /* ViewController.swift in Sources */,
 				3B6494611F196D0400E4F93E /* AppDelegate.swift in Sources */,
 			);
