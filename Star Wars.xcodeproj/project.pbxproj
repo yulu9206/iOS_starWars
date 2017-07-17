@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5898D21F1D344800DE9E51 /* StarWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5898D11F1D344800DE9E51 /* StarWarsModel.swift */; };
 		3B6494611F196D0400E4F93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6494601F196D0400E4F93E /* AppDelegate.swift */; };
 		3B6494661F196D0400E4F93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6494641F196D0400E4F93E /* Main.storyboard */; };
 		3B6494691F196D0400E4F93E /* Star_Wars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B6494671F196D0400E4F93E /* Star_Wars.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B5898D11F1D344800DE9E51 /* StarWarsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsModel.swift; sourceTree = "<group>"; };
 		3B64945D1F196D0400E4F93E /* Star Wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6494601F196D0400E4F93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B6494651F196D0400E4F93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				3B6494911F196D8000E4F93E /* PeopleViewController.swift */,
 				3B6494771F196D0400E4F93E /* Star WarsTests */,
 				3B6494931F1C1C6600E4F93E /* FilmViewController.swift */,
+				3B5898D11F1D344800DE9E51 /* StarWarsModel.swift */,
 			);
 			path = "Star Wars";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				3B6494691F196D0400E4F93E /* Star_Wars.xcdatamodeld in Sources */,
 				3B6494921F196D8000E4F93E /* PeopleViewController.swift in Sources */,
+				3B5898D21F1D344800DE9E51 /* StarWarsModel.swift in Sources */,
 				3B6494941F1C1C6700E4F93E /* FilmViewController.swift in Sources */,
 				3B6494611F196D0400E4F93E /* AppDelegate.swift in Sources */,
 			);
