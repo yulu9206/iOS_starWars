@@ -9,14 +9,23 @@
 import UIKit
 
 class FilmViewController: UITableViewController {
-    var films = [String]()
+    var films = [NSDictionary]()
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return films.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = films[indexPath.row]
+        cell.textLabel?.text = films[indexPath.row]["title"] as? String
         return cell
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showFSegue", sender: indexPath)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = sender as! NSIndexPath
+        let destController = segue.destination as? ShowFViewController
+        destController?.film = films[indexPath.row]
+        
     }
     //
     //  PeopleViewController.swift
@@ -36,7 +45,7 @@ class FilmViewController: UITableViewController {
                         if let results = jsonResult["results"] as? NSArray {
                             for film in results {
                                 let filmDict = film as! NSDictionary
-                                self.films.append(filmDict["title"]! as! String)
+                                self.films.append(filmDict)
                             }
                         }
                     }
@@ -54,7 +63,7 @@ class FilmViewController: UITableViewController {
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
         }
-
+    
         func getData() {
             let url = URL(string: "http://swapi.co/api/films/")
             // create a URLSession to handle the request tasks
@@ -73,7 +82,7 @@ class FilmViewController: UITableViewController {
                             for film in resultsArray {
                                 // cast to dictionary for data extraction
                                 let filmDict = film as! NSDictionary
-                                self.films.append(filmDict["title"]! as! String)
+                                self.films.append(filmDict)
                             }
 
                         }

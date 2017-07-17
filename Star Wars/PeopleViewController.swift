@@ -41,6 +41,15 @@ class PeopleViewController: UITableViewController {
         // if we return - sections we won't have any sections to put our rows in
         return 1
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showPSegue", sender: indexPath)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = sender as! NSIndexPath
+        let destController = segue.destination as? ShowPViewController
+        destController?.index = indexPath.row
+        
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return the count of people in our data array
         return people.count
